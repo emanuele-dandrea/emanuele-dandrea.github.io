@@ -27,11 +27,7 @@
   footer {
     background-color: rgb(40, 43, 41);
   }
-  .footer-logo {
-    p{
-      color: rgb(71, 168, 144);
-    }
-  }
+
   .footer-content {
     border-bottom: 1px solid rgb(135, 199, 183);
   }

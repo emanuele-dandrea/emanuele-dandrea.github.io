@@ -72,10 +72,14 @@ nav {
   font-family: "JetBrains Mono", monospace;
   cursor: default;
   height: 100px;
-  p {
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--black);
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
+    text-decoration: none;
   }
 }
 
@@ -162,6 +166,7 @@ nav {
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: center;
+  align-items: center;
   gap: 1em;
 }
 
@@ -331,10 +336,10 @@ footer {
 .footer-logo {
   font-family: "JetBrains Mono", monospace;
   cursor: default;
-  p{
+  a{
     color: var(--txt-footer);
-    font-size: 36px;
-    height: 36px;
+    font-size: 28px;
+    text-decoration: none;
     font-weight: bold;
   }
 }
