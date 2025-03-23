@@ -77,7 +77,7 @@ nav {
     align-items: center;
     justify-content: center;
     color: var(--black);
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
     text-decoration: none;
   }
@@ -338,7 +338,7 @@ footer {
   cursor: default;
   a{
     color: var(--txt-footer);
-    font-size: 28px;
+    font-size: 26px;
     text-decoration: none;
     font-weight: bold;
   }
