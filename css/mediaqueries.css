@@ -1,0 +1,104 @@
+/* RESPONSIVE MENU */
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    display: none;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+
+  .nav-links li {
+    flex-basis: 100%;
+  }
+
+  .nav-links a {
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2em;
+    img {
+      margin-right: 0px;
+    }
+  }
+
+  .content-container i{
+      line-height: 2.5em;
+      font-size: 3em;
+      letter-spacing: 0.25em;
+  }
+
+  .about-me-container {
+    max-width: 85%;
+  }
+  
+  .about-me-content {
+    text-align: center;
+    h1 {
+      margin-bottom: 0.2em;
+      font-size: 32px;
+    }
+    p {
+      line-height: 27px;
+      font-size: 17px;
+      margin-bottom: 1em;
+    }
+    button{
+      font-size: 14px;
+      padding: 13px 16px;
+      line-height: 0px;
+      i {
+        font-size: 1.1em;
+      }
+    }
+    :last-child{
+      margin: 0px;
+    }
+  }
+}
+
+@media (max-width: 712px) {
+  #projects {
+    height: fit-content;
+    padding: 30px 0px;
+  }
+  .discover-more {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .attribution {
+    p:first-child {
+      font-size: 14px;
+    }
+    p:last-child {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 1124px) {
+  .footer-containr {
+    width: 95%;
+  }
+}

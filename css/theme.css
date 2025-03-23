@@ -1,0 +1,38 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --white: rgb(29, 23, 23);
+    --black: rgb(253, 250, 246);
+    --hover: rgb(54, 233, 209);
+    --txt-footer: rgb(71, 168, 144);
+  }
+  
+  p {
+    color: rgb(147, 224, 208)
+  }
+
+  .project {
+    border: 1px solid rgb(112, 106, 106);
+  }
+  .project:hover {
+    box-shadow: 1px 1px 7px rgb(38, 49, 43);
+  }
+
+  .external::after {
+    filter: brightness(0) saturate(100%) invert(97%) sepia(3%) saturate(362%) hue-rotate(336deg) brightness(102%) contrast(99%);
+  }
+  .discover-more::after {
+    filter: brightness(0) saturate(100%) invert(97%) sepia(3%) saturate(362%) hue-rotate(336deg) brightness(102%) contrast(99%);
+  }
+
+  footer {
+    background-color: rgb(40, 43, 41);
+  }
+  .footer-logo {
+    p{
+      color: rgb(71, 168, 144);
+    }
+  }
+  .footer-content {
+    border-bottom: 1px solid rgb(135, 199, 183);
+  }
+}
