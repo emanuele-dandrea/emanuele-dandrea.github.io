@@ -354,7 +354,6 @@ footer {
     color: var(--txt-footer);
     font-size: 16px;
     font-weight: bold;
-    font-family: "JetBrains Mono", monospace;
   }
   margin-bottom: 20px;
 }
@@ -375,7 +374,7 @@ footer {
   flex-direction: column;
   gap: 20px;
   i {
-    font-size: 1.3em;
+    font-size: 1.5em;
     color: var(--txt-footer);
     margin-right: 0.1em;
   }
@@ -385,10 +384,6 @@ footer {
 }
 
 .attribution {
-  h1 {
-    font-size: 18px;
-    color: var(--txt-footer);
-  }
   a {
     color: gray;
   }

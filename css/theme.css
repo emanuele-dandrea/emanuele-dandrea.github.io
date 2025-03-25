@@ -1,11 +1,23 @@
 @media (prefers-color-scheme: dark) {
   :root {
-    --white: rgb(29, 23, 23);
-    --black: rgb(253, 250, 246);
+    --white: rgb(29, 23, 23); /* INVERTED */
+    --black: rgb(253, 250, 246); /* INVERTED */
     --hover: rgb(54, 233, 209);
     --txt-footer: rgb(71, 168, 144);
   }
   
+  ::selection {
+    background: rgb(235, 192, 135);
+    color: var(--black);
+    text-shadow: none;
+  }
+  
+  ::-moz-selection {
+    background: rgb(235, 192, 135);
+    color: var(--black);
+    text-shadow: none;
+  }
+
   p {
     color: rgb(147, 224, 208)
   }
@@ -30,5 +42,15 @@
 
   .footer-content {
     border-bottom: 1px solid rgb(135, 199, 183);
+  }
+  
+  .attribution {
+    a {
+      color: rgb(104, 218, 174);
+    }
+  }
+
+  .article {
+    border: 1px solid rgb(66, 75, 74);
   }
 }

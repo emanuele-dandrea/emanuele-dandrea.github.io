@@ -1,21 +1,28 @@
 @import url(style.css);
 
+:root {
+  --white: rgb(253, 250, 246);
+  --black: rgb(41, 39, 39);
+  --hover: rgb(58, 57, 57);
+}
+
 *{
   margin: 0;
   padding: 0;
 }
 
 body{
-  background-color: rgb(253, 250, 246);
+  background-color: var(--white);
   font-family: sans-serif;
 }
 
 .article{
   padding: 30px;
-  border: 1px solid rgb(197, 186, 168);
+  border: 1px solid rgb(159, 168, 167);
   border-radius: 5px;
-  background-color: rgb(228, 220, 209);
+  background-color: transparent;
   height: fit-content;
+  cursor: pointer;
   img {
     width: 100%;
     height: 200px;
@@ -26,9 +33,10 @@ body{
   }
   a {
     text-decoration: none;
-    color: black;
+    color: var(--black);
     :hover {
       text-decoration: underline;
+      color: var(--hover)
     }
   }
 }
@@ -40,13 +48,13 @@ body{
   a {
     padding: 5px 8px;
     border-radius: 5px;
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
     text-decoration: none;
     font-weight: bold;
   }
   a:hover {
-    background-color: rgb(51, 49, 49);
+    background-color: var(--hover);
   }
 }
 
