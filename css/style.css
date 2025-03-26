@@ -25,6 +25,7 @@ h1 {
 
 body {
   font-family: sans-serif;
+  background-color: var(--white);
 }
 
 section {
@@ -37,6 +38,11 @@ section {
 
 .external::after {
   content: url(assets/external.svg);
+  margin-left: 5px;
+}
+
+.support-button::after {
+  content: url(assets/coffee.svg);
   margin-left: 5px;
 }
 
@@ -101,6 +107,19 @@ nav {
   text-decoration: underline;
   text-underline-offset: 1em;
   color: var(--hover);
+}
+
+.nav-links .support-button {
+  padding: 8px 16px;
+  margin-left: 16px;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+}
+
+.nav-links .support-button:hover {
+  box-shadow: 1px 1px 7px rgb(161, 228, 190);
+  text-decoration: none;
+  color: var(--black);
 }
 
 .menu {
@@ -310,10 +329,13 @@ nav {
 /* FOOTER */
 
 footer {
-  padding: 30px 15px 30px 15px;
+  padding: 25px 25px;
+  border-radius: 5px 5px 0px 0px;
   background-color: rgb(224, 243, 233);
   display: flex;
   justify-content: center;
+  width: fit-content;
+  margin: auto;
 }
 
 .footer-container {

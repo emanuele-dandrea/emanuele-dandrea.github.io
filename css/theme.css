@@ -24,7 +24,11 @@
 
   .project {
     border: 1px solid rgb(112, 106, 106);
+    a {
+      border: 1px solid rgb(112, 106, 106);
+    }
   }
+
   .project:hover {
     box-shadow: 1px 1px 7px rgb(38, 49, 43);
   }
@@ -34,6 +38,14 @@
   }
   .discover-more::after {
     filter: brightness(0) saturate(100%) invert(97%) sepia(3%) saturate(362%) hue-rotate(336deg) brightness(102%) contrast(99%);
+  }
+
+  .support-button::after {
+    filter: brightness(0) saturate(100%) invert(97%) sepia(3%) saturate(362%) hue-rotate(336deg) brightness(102%) contrast(99%);
+  }
+
+  .nav-links .support-button:hover {
+    box-shadow: 1px 1px 7px rgb(38, 49, 43);
   }
 
   footer {
@@ -52,5 +64,11 @@
 
   .article {
     border: 1px solid rgb(66, 75, 74);
+  }
+}
+
+@media (max-width: 960px) {
+  .nav-links .support-button:hover {
+    box-shadow: none;
   }
 }
