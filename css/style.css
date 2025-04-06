@@ -152,6 +152,10 @@ nav {
   }
 }
 
+.links {
+  margin-top: 1em;
+}
+
 .content-container {
   p {
     letter-spacing: 1px;
@@ -329,7 +333,7 @@ nav {
 /* FOOTER */
 
 footer {
-  padding: 25px 25px;
+  padding: 25px 12px;
   border-radius: 5px 5px 0px 0px;
   background-color: rgb(224, 243, 233);
   display: flex;

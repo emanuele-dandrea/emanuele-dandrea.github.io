@@ -79,10 +79,12 @@
     }
   }
 
-  .content-container i{
-      line-height: 2.5em;
+  .links {
+    margin-top: 2.5em;
+    i{
       font-size: 3em;
-      letter-spacing: 0.25em;
+      letter-spacing: 0.35em;
+    }
   }
 
   .footer-content {
@@ -125,9 +127,6 @@
   footer {
     border-radius: 0px;
     width: 100%;
-  }
-  .footer-containr .attribution {
-    width: 95%;
   }
 }
 

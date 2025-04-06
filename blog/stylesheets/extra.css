@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+[data-md-color-scheme="default"] {
+  /* --md-primary-fg-color: #fdfaf6; */
+  --md-primary-bg-color: #1d1717;
+} 
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #1d1717;
+  --md-primary-bg-color: #fdfaf6;
+}
+
+
+.md-header {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.md-tabs {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+}
