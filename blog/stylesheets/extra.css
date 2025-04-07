@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
+:root {
+  --md-text-font: "Inter", sans-serif; 
+}
+
 [data-md-color-scheme="default"] {
-  /* --md-primary-fg-color: #fdfaf6; */
+  --md-primary-fg-color: #fdfaf6;
   --md-primary-bg-color: #1d1717;
 } 
 
@@ -13,9 +17,23 @@
 
 .md-header {
   font-family: "JetBrains Mono", monospace;
+  word-spacing: -5px;
 }
 
 .md-tabs {
   font-family: "JetBrains Mono", monospace;
   font-weight: bold;
+}
+
+.md-footer {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.md-search__input {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.md-nav__title {
+  font-family: "JetBrains Mono", monospace;
+  word-spacing: -5px;
 }
