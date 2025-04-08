@@ -7,17 +7,18 @@
 [data-md-color-scheme="default"] {
   --md-primary-fg-color: #fdfaf6;
   --md-primary-bg-color: #1d1717;
+  --md-default-bg-color: #fdfaf6;
 } 
 
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color: #1d1717;
   --md-primary-bg-color: #fdfaf6;
+  --md-default-bg-color: #1d1717;
 }
 
 
 .md-header {
-  font-family: "JetBrains Mono", monospace;
-  word-spacing: -5px;
+  font-family: "Inter", sans-serif;
 }
 
 .md-tabs {
@@ -30,10 +31,15 @@
 }
 
 .md-search__input {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "JetBrains Mono", sans-serif;
 }
 
 .md-nav__title {
+  font-family: "JetBrains Mono", monospace;
+  word-spacing: -5px;
+}
+
+.md-header__ellipsis {
   font-family: "JetBrains Mono", monospace;
   word-spacing: -5px;
 }
