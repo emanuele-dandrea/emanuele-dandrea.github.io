@@ -1,15 +1,16 @@
-@media (max-width: 768px) {
+@media (max-width: 1124px) {
   header {
     margin: 0px;
     width: 90%;
   }
+  .about {
+    width: 90%;
+    margin: 0px 0px 5vh;
+  }
   section {
     align-items: center;
   }
-  .about {
-    margin: 0px;
-    width: 90%;
-  }
+  
 }
 
 @media (max-width: 600px) {
@@ -52,6 +53,7 @@
     --fg-color: rgb(235, 231, 226);
     --hover-color: rgb(11, 228, 192);
     --accent-color: rgb(255, 255, 255);
+    --fg-bg-color: rgb(44, 33, 33);
   }
   
   ::selection {
@@ -68,5 +70,9 @@
 
   .social-link{
     filter: brightness(0) saturate(100%) invert(99%) sepia(4%) saturate(1043%) hue-rotate(34deg) brightness(106%) contrast(84%);
+  }
+
+  .quote::before {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(2%) saturate(5122%) hue-rotate(301deg) brightness(108%) contrast(87%);
   }
 }

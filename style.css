@@ -11,6 +11,7 @@
   --fg-color: rgb(34, 34, 34);
   --hover-color: rgb(53, 53, 245);
   --accent-color: rgb(78, 214, 169);
+  --fg-bg-color: rgb(122, 245, 224);
 }
 
 .selectDisable {
@@ -41,6 +42,12 @@
   text-shadow: none;
 }
 
+.quote::before {
+  content: url(assets/quote.svg);
+  margin-right: 5px;
+  filter: brightness(0) saturate(100%) invert(0%) sepia(15%) saturate(7462%) hue-rotate(43deg) brightness(123%) contrast(73%);
+}
+
 a{
   color: var(--fg-color);
 }
@@ -62,7 +69,7 @@ section {
 
 header{
   padding: 2vh 0px 0px;
-  margin: 0px 20vw;
+  margin: 0px 30vw;
   nav {
     display: flex;
     justify-content: space-between;
@@ -115,13 +122,14 @@ header{
 }
 
 .about {
-  margin: 0px 20vw;
-  padding-bottom: 5vh;
+  margin: 0px 30vw 5vh;
+  background-color: var(--fg-bg-color);
+  border-radius: 0px 5px 5px 0px;
   p {
-    padding-left: 10px;
     border-left: 3px solid var(--fg-color);
     letter-spacing: 1px;
     line-height: 20px;
+    padding: 5px 5px 5px 10px;
   }
   button {
     background: none;
@@ -136,5 +144,8 @@ header{
     background-color: var(--hover-color);
     color: var(--accent-color);
     text-decoration: none;
+  }
+  #title {
+    font-weight: bold;
   }
 }
