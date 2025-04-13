@@ -3,182 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css?v=0z1fbl5ca4dfl15" />
-    <link rel="stylesheet" href="css/mediaqueries.css?v=sq8sisfoumfz3f" />
-    <link rel="stylesheet" href="css/theme.css?v=hylsxytsd5lxo9" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Emanuele D'Andrea</title>
+    <link rel="stylesheet" href="style.css?v=3uaxn2" />
+    <link rel="stylesheet" href="mediaqueries.css?v=5tekio" />
     <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/apple-touch-icon.png"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon/site.webmanifest" />
-    <title>Emanuele D'Andrea Personal Website</title>
   </head>
   <body>
-    <!--NAVBAR-->
-    <nav>
-      <div class="logo selectDisable">
-        <a href="https://github.com/emanuele-dandrea" target="_blank">@emanuele-dandrea</a>
-      </div>
-      <div class="menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#about-me">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="blog/index.html" class="external">Blog</a></li>
-        <li>
-          <a
-            href="https://buymeacoffee.com/emanueledandrea"
-            target="_blank"
-            class="support-button"
-            >Buy me a coffee</a
-          >
-        </li>
-      </ul>
-    </nav>
+    <section>
+      <header>
+        <nav class="selectDisable">
+          <span class="logo">
+            <a href="#">@emanuele-dandrea</a>
+          </span>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li>
+              <a href="#" class="coffee"
+                >Buy me a coffe <i class="bi bi-cup-hot-fill"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <!--SECTIONS-->
-    <section id="home">
-      <div class="profile-container selectDisable">
-        <img src="general-assets/profile.webp" alt="Profile Picture" />
-        <div class="content-container">
-          <p>Hello, I'm</p>
-          <h1>Emanuele D'Andrea</h1>
-          <p>Secondary School Student</p>
-          <div class="links">
-            <a href="https://github.com/emanuele-dandrea" target="_blank" title="Reach me on GitHub">
-              <i class="bi-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/emanuele-d-andrea-234a48358/"target="_blank" title="Reach me on Linkedin">
-              <i class="bi-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about-me">
-      <div class="about-me-container">
-        <img src="general-assets/me.webp" />
-        <div class="about-me-content selectDisable">
-          <h1>About</h1>
-          <p>
-            "It was a lot of fun making this site and was definitely worth
-            it. Computer science is very important to me, I can make so many
-            things! I hope this is just the beginning."
-          </p>
+      <div class="profile selectDisable">
+        <img
+          src="assets/profile.png"
+          class="profile-picture"
+          alt="Profile picture"
+        />
+        <div>
+          <p>Emanuele D'Andrea</p>
           <span>
-            <button
-              type="button"
-              onclick="window.open('general-assets/emanuele-dandreaCV.pdf')"
-            >
-              <i class="bi bi-file-earmark-arrow-down-fill"></i> My CV
-            </button>
-            <a href="mailto:emanueledandrea@proton.me">
-              <button type="button">
-                <i class="bi bi-envelope-at-fill"></i> Contact Me
-              </button>
-            </a>
+            <a href="mailto:emanueledandrea@proton.me" target="_blank"
+              ><img
+                src="assets/envelope.svg"
+                alt="Contact Me"
+                class="social-link"
+            /></a>
+            <a href="https://github.com/emanuele-dandrea" target="_blank"
+              ><img src="assets/github.svg" alt="GitHub" class="social-link"
+            /></a>
+            <a href="#" target="_blank"
+              ><img
+                src="assets/linkedin.svg"
+                alt="Linkedin"
+                class="social-link"
+            /></a>
           </span>
         </div>
-        <div class="discover-more selectDisable">
-          <a href="#projects">check out my projects</a>
-        </div>
       </div>
-    </section>
 
-    <section id="projects">
-      <div class="projects-section-title selectDisable">
-        <p>Discover My Recent</p>
-        <h1>Projects</h1>
-      </div>
-      <div class="projects-container selectDisable">
-        <div class="project">
-          <div class="image-container" id="image-1"></div>
-          <h1>Personal Website</h1>
-          <a
-            href="https://github.com/emanuele-dandrea/emanuele-dandrea.github.io"
-            target="_blank"
-            class="selectDisable"
+      <div class="about">
+        <p>
+          Welcome to my site, I created it with so much passion and dedication,
+          it is the portal that will allow me to be recognized by the world
+          after all! It is obvious that I had to create it in every detail.
+          Having said that I leave you
+          <button
+            type="button"
+            onclick="window.open('assets/emanuele-dandreaCV.pdf')"
           >
-            <i class="bi bi-box-arrow-up-right"></i> GitHub
-          </a>
-        </div>
-        <!-- <div class="project">
-          <div class="image-container" id="image-2"></div>
-          <h1>Project Two</h1>
-          <a href="" class="selectDisable">
-            <i class="bi bi-box-arrow-up-right"></i> Link 2
-          </a>
-        </div>
-        <div class="project">
-          <div class="image-container" id="image-3"></div>
-          <h1>Project Three</h1>
-          <a href="" class="selectDisable">
-            <i class="bi bi-box-arrow-up-right"></i> Link 3
-          </a>
-        </div> -->
+            my CV <i class="bi bi-box-arrow-down"></i>
+          </button>
+          if you are interested in me.
+        </p>
       </div>
     </section>
-
-    <!--FOOTER-->
-    <footer>
-      <div class="footer-container selectEnable">
-        <div class="footer-content">
-          <div class="logo-container">
-            <div class="footer-logo selectDisable">
-              <a href="https://github.com/emanuele-dandrea" target="_blank" title="Go to my GitHub"
-                >@emanuele-dandrea</a
-              >
-            </div>
-            <div class="social-container selectDisable">
-              <a href="https://github.com/emanuele-dandrea" target="_blank" title="Reach me on GitHub"
-                ><i class="bi bi-github"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/emanuele-d-andrea-234a48358/"
-                target="_blank" title="Reach me on Linkedin"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-            </div>
-          </div>
-          <ul class="footer-links">
-            <p>My pages</p>
-            <li><a href="#">Back to Top <i class="bi bi-arrow-up-circle-fill"></i></a></li>
-            <li><a href="#about-me">About</a></li>
-            <li><a href="blog/index.html">Blog</a></li>
-          </ul>
-        </div>
-        <div class="attribution">
-          <p>Emanuele D'Andrea Personal Website</p>
-          <p>
-            This work is licensed under
-            <a
-              href="https://github.com/emanuele-dandrea/emanuele-dandrea.github.io?tab=MIT-1-ov-file#"
-              target="_blank"
-            >
-              MIT License
-            </a>
-          </p>
-        </div>
-      </div>
-    </footer>
   </body>
-  <script src="js/navigation.js"></script>
 </html>
