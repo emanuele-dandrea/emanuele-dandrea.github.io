@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: serif;
+  font-family: sans-serif;
 }
 
 :root {
@@ -98,6 +98,10 @@ header{
       text-decoration: none;
     }
   }
+  span{
+    display: flex;
+    gap: 5px;
+  }
 }
 
 .social-link {
@@ -112,10 +116,10 @@ header{
 
 .about {
   margin: 0px 20vw;
-  padding-bottom: 2vh;
+  padding-bottom: 5vh;
   p {
     padding-left: 10px;
-    border-left: 1px solid var(--fg-color);
+    border-left: 3px solid var(--fg-color);
     letter-spacing: 1px;
     line-height: 20px;
   }

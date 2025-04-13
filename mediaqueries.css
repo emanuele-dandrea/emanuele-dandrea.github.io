@@ -25,13 +25,18 @@
     div {
       text-align: center;
       font-size: 28px;
+      gap: 25px;
+    }
+    span{
+      justify-content: center;
+      gap: 10px;
     }
   }
   .profile-picture {
     width: 200px; 
   }
   .social-link {
-      width: 28px;
+      width: 36px;
   }
 }
 
