@@ -9,13 +9,14 @@
   }
   section {
     align-items: center;
-  }
-  
+  } 
 }
 
 @media (max-width: 600px) {
   header {
     width: fit-content;
+    border: none;
+    font-size: 20px;
   }
   nav {
     flex-direction: column;
@@ -41,19 +42,12 @@
   }
 }
 
-@media (max-height: 600px) {
-  section {
-    height: 150vh;
-  }
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: rgb(22, 22, 22);
     --fg-color: rgb(235, 231, 226);
     --hover-color: rgb(11, 228, 192);
     --accent-color: rgb(255, 255, 255);
-    --fg-bg-color: rgb(44, 33, 33);
   }
   
   ::selection {

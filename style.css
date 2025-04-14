@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: serif;
 }
 
 :root {
@@ -11,7 +11,6 @@
   --fg-color: rgb(34, 34, 34);
   --hover-color: rgb(53, 53, 245);
   --accent-color: rgb(78, 214, 169);
-  --fg-bg-color: rgb(122, 245, 224);
 }
 
 .selectDisable {
@@ -58,25 +57,20 @@ p{
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   background-color: var(--bg-color);
+  gap: 100px;
 }
 
 /* --- */
 
 header{
-  padding: 2vh 0px 0px;
+  padding: 2vh 0px 5px;
   margin: 0px 30vw;
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--fg-color);
-    padding-bottom: 5px;
-  }
+  border-bottom: 1px solid var(--fg-color);
   ul {
     display: flex;
     gap: 20px;
@@ -89,6 +83,13 @@ header{
     background-color: var(--hover-color);
     color: var(--accent-color);
   }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
 .profile {
@@ -122,11 +123,10 @@ header{
 }
 
 .about {
-  margin: 0px 30vw 5vh;
-  background-color: var(--fg-bg-color);
+  margin: 0px 30vw;
   border-radius: 0px 5px 5px 0px;
   p {
-    border-left: 3px solid var(--fg-color);
+    border-left: 2px solid var(--fg-color);
     letter-spacing: 1px;
     line-height: 20px;
     padding: 5px 5px 5px 10px;
@@ -145,7 +145,7 @@ header{
     color: var(--accent-color);
     text-decoration: none;
   }
-  #title {
+  :first-child {
     font-weight: bold;
   }
 }
