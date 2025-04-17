@@ -43,13 +43,13 @@
 }
 
 .quote::before {
-  content: url(assets/quote.svg);
+  content: url(../assets/quote.svg);
   margin-right: 0.1rem;
   filter: brightness(0) saturate(100%) invert(0%) sepia(15%) saturate(7462%) hue-rotate(43deg) brightness(123%) contrast(73%);
 }
 
 .download::after {
-  content: url(assets/download.svg);
+  content: url(../assets/download.svg);
   margin-left: 0.1rem;
   filter: brightness(0) saturate(100%) invert(0%) sepia(15%) saturate(7462%) hue-rotate(43deg) brightness(123%) contrast(73%);
 }
@@ -251,13 +251,16 @@ footer {
 }
  
 .nav-back-wp {
-  width: 100%;
+  padding-top: 10vh;
+  text-align: center;
+  a:hover {
+    background-color: var(--hover-color);
+    color: var(--accent-color);
+    text-decoration: none;
+  }
 }
 
 .nav-back-wp a {
   font-size: 20px;
-  display: inline-block;
-  margin-left: auto;
-  margin-bottom: 1rem;
   text-decoration: underline;
 }
