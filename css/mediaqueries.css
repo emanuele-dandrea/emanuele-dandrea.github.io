@@ -1,0 +1,94 @@
+@media (max-width: 1124px) {
+  header {
+    margin: auto;
+    width: 90%;
+  }
+  main {
+    width: 90%;
+    margin: auto;
+  }
+  footer {
+    width: 100%;
+    border-radius: 0;
+    padding: 0.5rem 0 1rem 0;
+    p {
+      width: 90%;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    width: fit-content;
+    border: none;
+    font-size: 18px;
+    padding-top: 2vh;
+  }
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .profile {
+    flex-direction: column;
+    div {
+      text-align: center;
+      font-size: 28px;
+      gap: 25px;
+    }
+    span{
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+  .profile-picture {
+    width: 200px; 
+  }
+  .social-link {
+      width: 36px;
+  }
+  footer {
+    text-align: left;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: rgb(22, 22, 22);
+    --fg-color: rgb(235, 231, 226);
+    --hover-color: rgb(11, 228, 192);
+    --accent-color: rgb(255, 255, 255);
+    --footer-bg-color: rgb(41, 38, 38);
+  }
+  
+  footer {
+    background-color: var(--footer-bg-color);
+  }
+
+  ::selection {
+    background: var(--hover-color);
+    color: var(--accent-color);
+    text-shadow: none;
+  }
+  
+  ::-moz-selection {
+    background: var(--hover-color);
+    color: var(--accent-color);
+    text-shadow: none;
+  }
+
+  .social-link{
+    filter: brightness(0) saturate(100%) invert(99%) sepia(4%) saturate(1043%) hue-rotate(34deg) brightness(106%) contrast(84%);
+  }
+
+  .quote::before {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(2%) saturate(5122%) hue-rotate(301deg) brightness(108%) contrast(87%);
+  }
+
+  .download:hover:after {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(180deg) brightness(117%) contrast(104%);
+  }
+  .download::after {
+    filter: brightness(0) saturate(100%) invert(97%) sepia(8%) saturate(323%) hue-rotate(13deg) brightness(105%) contrast(84%);
+  }
+}
