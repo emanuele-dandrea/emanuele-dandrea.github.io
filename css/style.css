@@ -69,6 +69,8 @@ p{
 body {
   min-height: 100vh;
   background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -80,6 +82,7 @@ main {
   align-items: center;
   gap: 10vh;
   padding: 10vh 0;
+  flex-grow: 1;
 }
 
 /* --- */
