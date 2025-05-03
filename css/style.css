@@ -3,15 +3,16 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: serif;
 }
 
 :root {
   --bg-color: rgb(253, 250, 246);
   --fg-color: rgb(34, 34, 34);
-  --hover-color: rgb(53, 53, 245);
-  --accent-color: rgb(78, 214, 169);
-  --footer-bg-color: rgb(206, 241, 234);
+  --hover-color: rgb(219, 214, 214);
+  --accent-color: rgb(46, 48, 51);
+  --footer-bg-color: rgb(234, 247, 242);
+  --content-width: 40em;
 }
 
 .selectDisable {
@@ -30,38 +31,40 @@
   user-select: text;
 }
 
-::selection {
+/* ::selection {
   background: var(--hover-color);
   color: var(--accent-color);
   text-shadow: none;
-}
+} */
 
-::-moz-selection {
+/* ::-moz-selection {
   background: var(--hover-color);
   color: var(--accent-color);
   text-shadow: none;
-}
+} */
 
 .quote::before {
   content: url(../assets/quote.svg);
   margin-right: 0.1rem;
-  filter: brightness(0) saturate(100%) invert(0%) sepia(15%) saturate(7462%) hue-rotate(43deg) brightness(123%) contrast(73%);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(15%) saturate(7462%)
+    hue-rotate(43deg) brightness(123%) contrast(73%);
 }
 
 .download::after {
   content: url(../assets/download.svg);
   margin-left: 0.1rem;
-  filter: brightness(0) saturate(100%) invert(0%) sepia(15%) saturate(7462%) hue-rotate(43deg) brightness(123%) contrast(73%);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(15%) saturate(7462%)
+    hue-rotate(43deg) brightness(123%) contrast(73%);
 }
 .download:hover:after {
-  filter: brightness(0) saturate(100%) invert(83%) sepia(14%) saturate(1640%) hue-rotate(101deg) brightness(92%) contrast(82%);
+  filter: brightness(0) saturate(100%) invert(13%) sepia(70%) saturate(624%) hue-rotate(77deg) brightness(47%) contrast(83%);
 }
 
-a{
+a {
   color: var(--fg-color);
 }
 
-p{
+p {
   color: var(--fg-color);
   cursor: default;
 }
@@ -75,7 +78,7 @@ body {
 
 main {
   margin: auto;
-  width: 40vw;
+  width: var(--content-width);
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -87,20 +90,20 @@ main {
 
 /* --- */
 
-header{
+header {
   margin: auto;
-  width: 40vw;
   padding: 2vh 0px 5px;
   border-bottom: 1px solid var(--fg-color);
+  width: var(--content-width);
   ul {
     display: flex;
-    gap: 20px;
+    gap: 1em;
     list-style: none;
   }
   a {
     text-decoration: none;
   }
-  a:hover{
+  a:hover {
     background-color: var(--hover-color);
     color: var(--accent-color);
   }
@@ -109,7 +112,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .profile {
@@ -118,7 +120,7 @@ nav {
   align-items: center;
   gap: 10px;
   font-size: 24px;
-  div{
+  div {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -126,7 +128,7 @@ nav {
       text-decoration: none;
     }
   }
-  span{
+  span {
     display: flex;
     gap: 5px;
   }
@@ -134,7 +136,8 @@ nav {
 
 .social-link {
   width: 24px;
-  filter: brightness(0) saturate(100%) invert(7%) sepia(22%) saturate(25%) hue-rotate(322deg) brightness(99%) contrast(87%);
+  filter: brightness(0) saturate(100%) invert(7%) sepia(22%) saturate(25%)
+    hue-rotate(322deg) brightness(99%) contrast(87%);
 }
 
 .profile-picture {
@@ -216,7 +219,7 @@ footer {
   background-color: var(--footer-bg-color);
   border-radius: 5px 5px 0px 0px;
   margin: auto;
-  width: 40vw;
+  width: var(--content-width);
   padding: 0.5rem 0.3rem 1rem 0.3rem;
   text-align: center;
   a:hover {
@@ -252,18 +255,14 @@ footer {
     color: var(--fg-color);
   }
 }
- 
+
 .nav-back-wp {
   padding-top: 10vh;
   text-align: center;
+  font-size: 22px;
   a:hover {
     background-color: var(--hover-color);
     color: var(--accent-color);
     text-decoration: none;
   }
-}
-
-.nav-back-wp a {
-  font-size: 22px;
-  text-decoration: underline;
 }

@@ -1,10 +1,10 @@
-@media (max-width: 1124px) {
+@media (max-width: 768px) {
   header {
     margin: auto;
-    width: 90%;
+    width: 85%;
   }
   main {
-    width: 90%;
+    width: 85%;
     margin: auto;
   }
   footer {
@@ -12,7 +12,7 @@
     border-radius: 0;
     padding: 0.5rem 0 1rem 0;
     p {
-      width: 90%;
+      width: 85%;
       margin: auto;
     }
   }
@@ -36,31 +36,33 @@
       font-size: 28px;
       gap: 25px;
     }
-    span{
+    span {
       justify-content: center;
       gap: 10px;
     }
   }
   .profile-picture {
-    width: 200px; 
+    width: 200px;
   }
   .social-link {
-      width: 36px;
+    width: 36px;
   }
   footer {
     text-align: left;
   }
 }
 
+/* DARK THEME */
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: rgb(22, 22, 22);
+    --bg-color: rgb(26, 26, 26);
     --fg-color: rgb(235, 231, 226);
-    --hover-color: rgb(11, 228, 192);
-    --accent-color: rgb(255, 255, 255);
+    --hover-color: rgb(20, 233, 204);
+    --accent-color: rgb(54, 68, 68);
     --footer-bg-color: rgb(41, 38, 38);
   }
-  
+
   footer {
     background-color: var(--footer-bg-color);
   }
@@ -70,25 +72,29 @@
     color: var(--accent-color);
     text-shadow: none;
   }
-  
+
   ::-moz-selection {
     background: var(--hover-color);
     color: var(--accent-color);
     text-shadow: none;
   }
 
-  .social-link{
-    filter: brightness(0) saturate(100%) invert(99%) sepia(4%) saturate(1043%) hue-rotate(34deg) brightness(106%) contrast(84%);
+  .social-link {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(4%) saturate(1043%)
+      hue-rotate(34deg) brightness(106%) contrast(84%);
   }
 
   .quote::before {
-    filter: brightness(0) saturate(100%) invert(99%) sepia(2%) saturate(5122%) hue-rotate(301deg) brightness(108%) contrast(87%);
+    filter: brightness(0) saturate(100%) invert(99%) sepia(2%) saturate(5122%)
+      hue-rotate(301deg) brightness(108%) contrast(87%);
   }
 
   .download:hover:after {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(180deg) brightness(117%) contrast(104%);
+    filter: brightness(0) saturate(100%) invert(25%) sepia(18%) saturate(393%)
+      hue-rotate(131deg) brightness(90%) contrast(91%);
   }
   .download::after {
-    filter: brightness(0) saturate(100%) invert(97%) sepia(8%) saturate(323%) hue-rotate(13deg) brightness(105%) contrast(84%);
+    filter: brightness(0) saturate(100%) invert(97%) sepia(8%) saturate(323%)
+      hue-rotate(13deg) brightness(105%) contrast(84%);
   }
 }
