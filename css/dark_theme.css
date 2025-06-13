@@ -20,7 +20,7 @@
         text-shadow: none;
     }
 
-    /* Assets */
+    /* Social icon */
     .social-link {
         filter: brightness(0) saturate(100%) invert(99%) sepia(4%)
             saturate(1043%) hue-rotate(34deg) brightness(106%) contrast(84%);
