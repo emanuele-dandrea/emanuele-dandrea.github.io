@@ -269,7 +269,6 @@ nav {
     details[open] {
         summary {
             list-style-type: "\F281";
-            font-family: bootstrap-icons;
         }
         border: 1px solid var(--fg-color);
     }
@@ -278,11 +277,11 @@ nav {
         font-size: 1.2em;
         color: var(--fg-color);
         list-style-type: "\F27E";
-        font-family: bootstrap-icons;
     }
 
     summary::marker {
         color: var(--fg-color);
+        font-family: bootstrap-icons;
     }
 
     span {
