@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "serif", "bootstrap-icons";
+    font-family: serif;
 }
 
 :root {
@@ -49,10 +49,12 @@ p {
 .quote::before {
     content: "\F6B0";
     color: var(--fg-color);
+    font-family: bootstrap-icons;
 }
 .download::after {
     content: "\F1B9";
     color: var(--fg-color);
+    font-family: bootstrap-icons;
 }
 
 body {
