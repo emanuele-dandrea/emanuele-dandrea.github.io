@@ -274,12 +274,13 @@ nav {
     }
 
     summary {
-        font-size: 1.2em;
+        font-size: 1.2rem;
         color: var(--fg-color);
         list-style-type: "\F27E";
     }
 
     summary::marker {
+        font-size: 1rem;
         color: var(--fg-color);
         font-family: bootstrap-icons;
     }
